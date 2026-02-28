@@ -1,3 +1,4 @@
-function getElementValueById(id){
+function getElementValueById(id) {
+    console.log(id);
 
 }
