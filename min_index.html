@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>min</title>
+    <!-- daisyui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- fonts awsome link  -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
+
+</head>
+
+<body class="bg-slate-800">
+    <header>
+        <section class="max-w-md min-h-screen mx-auto py-6 bg-slate-200">
+            <section>
+                <nav class="flex justify-between items-center px-5 ">
+                    <div class="flex gap-2">
+                        <img class="w-13" src="./assets/Group.png" alt="">
+                        <div>
+                            <h1 class="font-bold "> $<span id="add_money_min_balence">0.00</span></h1>
+                            <p class="opacity-80">Available Balance</p>
+                        </div>
+
+                    </div>
+
+                    <button class="opacity-80 flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15" />
+                        </svg>
+                        Log Out</button>
+                </nav>
+                <hr class="opacity-20 mt-3">
+
+
+                <!-- welcome to Payooo!  -->
+                <div class="mt-5 px-3">
+                    <h1 class="font-bold">🔥 Welcome to Payooo! </h1>
+                    <p class="opacity-80 mt-4">Enjoy easy and convenient financial services with us. Cashout charge is
+                        low
+                        and </p>
+                </div>
+
+
+                <!-- crad section  -->
+                <section class="mt-7">
+                    <div class="grid grid-cols-3 gap-2 px-2">
+                        <div id="add-money_box" class="border py-4 text-center rounded-sm">
+                            <img class="mx-auto" src="./assets/wallet1.png" alt="">
+                            <p>Add Money</p>
+                        </div>
+                        <div id="cashout_box" class="border py-4 text-center rounded-sm">
+                            <img class="mx-auto" src="./assets/send1.png" alt="Money">
+                            <p>Cashout</p>
+                        </div>
+                        <div class="border py-4 text-center rounded-sm">
+                            <img class="mx-auto" src="./assets/money1.png" alt="">
+                            <p>Transfer Money</p>
+                        </div>
+                        <div class="border py-4 text-center rounded-sm">
+                            <img class="mx-auto" src="./assets/bonus1.png" alt="">
+                            <p>Get Bonus</p>
+                        </div>
+                        <div class="border py-4 text-center rounded-sm">
+                            <img class="mx-auto" src="./assets/purse1.png" alt="">
+                            <p>Pay Bill</p>
+                        </div>
+                        <div class="border py-4 text-center rounded-sm">
+                            <img class="mx-auto" src="./assets/transaction1.png" alt="">
+                            <p>Transactions</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- first_login_section add money-->
+
+                <div id="first_login_section" class="mt-6 px-4">
+                    <h1 class="font-bold flex justify-center font-bold text-5xl text-red-500 mb-3">Add Money</h1>
+
+
+
+                    <section class="px-5 ">
+                        <div class=" ">
+                            <div class="hero-content flex-col lg:flex-row-reverse">
+                                <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+
+                                    <div class="card-body bg-slate-100 rounded-xl">
+                                        <fieldset class="fieldset space-y-1">
+                                            <h1>Select A Bank</h1>
+                                            <select class="select rounded-full bg-slate-200 border-none">
+                                                <option>Select back</option>
+                                                <option value="Bikash ">Bikash</option>
+                                                <option value="Nogot">Nogot</option>
+                                                <option value="islami Bank">islami bank</option>
+                                            </select>
+                                            <label class="label">Account Number</label>
+                                            <input id="add-money_number" value="01753687965" type="number"
+                                                class="input  rounded-full bg-slate-200 border-none"
+                                                placeholder="Enter 11 digit account number" />
+                                            <label class="label">Amount</label>
+                                            <input value="100" id="add_money_amount" type="number"
+                                                class="input  rounded-full bg-slate-200 border-none"
+                                                placeholder="type your amount" />
+                                            <label class="label">PIN</label>
+                                            <input id="add_money_pin" value="1234" type="number"
+                                                class="input rounded-full bg-slate-200 border-none"
+                                                placeholder="Entre your Pin" />
+                                            <!-- <label class="label">Pin Number</label>
+                                        <input type="number" class="input rounded-full bg-slate-200" placeholder="Enter 4 digit pin number" /> -->
+                                            <div><a class="link link-hover">Forgot password?</a></div>
+                                            <button id="btn-add-money" class="btn btn-neutral mt-4" type="submit">Add
+                                                Momey</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+
+
+            <!-- cashout section  -->
+            <section id="cashout-section" class="mt-6 px-4">
+                <h1 class=" flex justify-center font-bold text-5xl text-primary">CASHOUT</h1>
+                <div class="px-5 ">
+                    <div>
+                        <div class="hero-content flex-col lg:flex-row-reverse">
+                            <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+
+                                <div class="card-body border border-x-red-500 border-green-500 rounded-xl">
+                                    <fieldset class="fieldset space-y-1">
+                                        <h1>Select A Bank</h1>
+                                        <select class="select rounded-full bg-slate-200 border-none">
+                                            <option>Select back</option>
+                                            <option value="Bikash ">Bikash</option>
+                                            <option value="Nogot">Nogot</option>
+                                            <option value="islami Bank">islami bank</option>
+                                        </select>
+                                        <label class="label">Account Number</label>
+                                        <input id="cashout_number" value="01753687965" type="number"
+                                            class="input  rounded-full bg-slate-200 border-none"
+                                            placeholder="Enter 11 digit account number" />
+                                        <label class="label"> Cashout Amount</label>
+                                        <input value="100" id="cashout_amount" type="number"
+                                            class="input  rounded-full bg-slate-200 border-none"
+                                            placeholder="type your amount" />
+                                        <label class="label">PIN</label>
+                                        <input id="cashout_pin" value="1234" type="number"
+                                            class="input rounded-full bg-slate-200 border-none"
+                                            placeholder="Entre your Pin" />
+                                        <!-- <label class="label">Pin Number</label>
+                                        <input type="number" class="input rounded-full bg-slate-200" placeholder="Enter 4 digit pin number" /> -->
+                                        <div><a class="link link-hover">Forgot password?</a></div>
+                                        <button id="cashout_btn" class="btn btn-neutral mt-4"
+                                            type="submit">Cashout</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        </section>
+    </header>
+    <!-- <script src="add_money.js"></script> -->
+    <script src="./login-page/add_money.js"></script>
+    <script src="./login-page/cashout.js"></script>
+
+    <!-- <script src="toggle.js"></script>
+    <script src="cashout/cashout.js"></script>
+
+</body>
+
+</html>
