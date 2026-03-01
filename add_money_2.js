@@ -6,6 +6,5 @@ document.getElementById('btn-add-money')
         console.log(amount, pin);
 
 
-
         
     });
