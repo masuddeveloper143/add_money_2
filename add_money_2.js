@@ -3,6 +3,7 @@ document.getElementById('btn-add-money')
         event.preventDefault();
         const amount = getInputValueById("add_money_amount");
         const pin = getInputValueById("add_money_pin");
+        const balance = getInputValueById("add_money_pin");
         const account = document.getElementById("add-money_number").value;
 
         if (account.length === 11) {
