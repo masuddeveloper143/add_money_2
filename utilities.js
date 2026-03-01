@@ -1,6 +1,6 @@
 function getInputValueById(id) {
     const value = document.getElementById(id).value;
-    const convertedValue = parseFloat(amount);
+    const convertedValue = parseFloat(value);
     return convertedValue;
 
 }
