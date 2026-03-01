@@ -10,3 +10,5 @@ function getInnerTextById(id){
     const converted = parseFloat(value);
     return converted;
 }
+
+function setInnerText
