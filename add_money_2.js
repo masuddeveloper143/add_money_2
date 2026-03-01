@@ -10,7 +10,8 @@ document.getElementById('btn-add-money')
         if (account.length === 11) {
             if (pin === 1234) {
                 const sum = balance + amount;
-                document.getElementById("add_money_min_balence").innerText = sum;
+                // document.getElementById("add_money_min_balence").innerText = sum;
+                setInnerTextByIdandValue("add_money_min_balence", sum);
             } else {
                 alert('incorrect pin')
             }
