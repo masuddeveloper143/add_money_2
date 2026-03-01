@@ -5,4 +5,7 @@ document.getElementById('btn-add-money')
         const pin = getInputValueById("add_money_pin");
         console.log(amount, pin);
 
+
+
+        
     });
