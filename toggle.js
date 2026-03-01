@@ -1,1 +1,1 @@
-alert()
+document.getElementById('cashout-section').style.display = "none";
