@@ -4,3 +4,8 @@ function getInputValueById(id) {
     return convertedValue;
 
 }
+
+function getInnerTextById(id){
+    const value = document.getElementById(id).innerText;
+    const converted = parseFloat()
+}
