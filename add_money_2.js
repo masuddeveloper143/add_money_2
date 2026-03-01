@@ -12,6 +12,7 @@ document.getElementById('btn-add-money')
                 const sum = balance + amount;
                 // document.getElementById("add_money_min_balence").innerText = sum;
                 setInnerTextByIdandValue("add_money_min_balence", sum);
+                // console.log(sum);
             } else {
                 alert('incorrect pin')
             }
