@@ -21,14 +21,15 @@ document.getElementById('btn-add-money')
                 const container = document.getElementById('transaction-container');
                 const p = document.createElement("p");
 
-                p.innerHTML = `added ${amount} from ${account} acount`;
+                p.innerText = `added ${amount} from ${account} acount`;
                 container.appendChild(p)
+                
 
             } else {
                 alert('incorrect pin')
             }
         } else {
             alert('invalid number');
-        }
+        } 
 
     });
