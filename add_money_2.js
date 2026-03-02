@@ -1,3 +1,5 @@
+const { createElement } = require("react");
+
 document.getElementById('btn-add-money')
     .addEventListener('click', function (event) {
         event.preventDefault();
@@ -7,13 +9,15 @@ document.getElementById('btn-add-money')
         const pin = getInputValueById("add_money_pin");
         const balance = getInnerTextById("add_money_min_balence");
         const account = document.getElementById("add-money_number").value;
+        const allBank = document.getElementById("all-bank").value;
+        console.log(allBank);
 
         if (amount < 0) {
             alert("added money minimum 1 tk")
             return;
         }
 
-        
+
 
         if (account.length === 11) {
             if (pin === 1234) {
@@ -25,10 +29,20 @@ document.getElementById('btn-add-money')
 
 
                 const container = document.getElementById('transaction-container');
-                const p = document.createElement("p");
+                
+                // const p = document.createElement("p");
 
-                p.innerText = `added ${amount} from ${account} acount`;
-                container.appendChild(p)
+                // p.innerText = `added ${amount} from ${account} acount`;
+                // container.appendChild(p)
+
+                const div = document.createElement("div");
+                div.classList.add("bg-red-400");
+                div.innerHTML = `
+                    <p>Added ${amount} from ${account}</p>
+                `;
+
+                container.appendChild(div);
+
 
 
             } else {
