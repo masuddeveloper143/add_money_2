@@ -1,7 +1,3 @@
-
-
-handleToggle("transection_hestory", "none");
-
 document.getElementById('btn-add-money')
     .addEventListener('click', function (event) {
         event.preventDefault();
@@ -20,6 +16,14 @@ document.getElementById('btn-add-money')
                 // document.getElementById("add_money_min_balence").innerText = sum;
                 setInnerTextByIdandValue("add_money_min_balence", sum);
                 // console.log(sum);
+
+
+                const container = document.getElementById('transaction-container');
+                const p = document.createElement("p");
+
+                p.innerHTML = `added ${amount} from ${account} acount`;
+                container.appendChild(p)
+
             } else {
                 alert('incorrect pin')
             }
