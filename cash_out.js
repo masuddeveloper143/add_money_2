@@ -10,6 +10,11 @@ document.getElementById('cashout_btn')
         const cashoutMinBalance = getInnerTextById('add_money_min_balence');
         // console.log(cashoutAmount,cashoutPin,cashoutMinBalance);
 
+        if (cashoutAmount > cashoutMinBalance ) {
+            alert("invalied amount")
+            return;
+        }
+
         if (cashNumber.length === 11) {
             if (cashoutPin === 1234) {
                 const sum = cashoutMinBalance - cashoutAmount;
