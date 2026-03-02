@@ -8,7 +8,7 @@ document.getElementById('btn-add-money')
         const balance = getInnerTextById("add_money_min_balence");
         const account = document.getElementById("add-money_number").value;
 
-
+        
 
         if (account.length === 11) {
             if (pin === 1234) {
@@ -23,13 +23,13 @@ document.getElementById('btn-add-money')
 
                 p.innerText = `added ${amount} from ${account} acount`;
                 container.appendChild(p)
-                
+
 
             } else {
                 alert('incorrect pin')
             }
         } else {
             alert('invalid number');
-        } 
+        }
 
     });
