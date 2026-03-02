@@ -8,7 +8,7 @@ document.getElementById('btn-add-money')
         const balance = getInnerTextById("add_money_min_balence");
         const account = document.getElementById("add-money_number").value;
         const allBank = document.getElementById("all-bank").value;
-        console.log(allBank);
+        console.log(allBank)
 
         if (amount < 0) {
             alert("added money minimum 1 tk")
@@ -26,16 +26,31 @@ document.getElementById('btn-add-money')
                 console.log('add money successful🎉');
 
 
-                const container = document.getElementById('transaction-container');
+                // const container = document.getElementById('transaction-container');
+                // const p = document.createElement("p");
+
+                // p.innerText = `added ${amount} from ${account} acount`;
+                // container.appendChild(p)
+// ----------------------------------------------------------------------------------------------------------
+                // const div = document.createElement("div");
+                // div.classList.add("bg-red-400");
+                // div.innerHTML = `
+                //     <p>Added ${amount} from ${account}</p>
+                // `;
+
+                // container.appendChild(div);
+// ----------------------------------------------------------------------------------------------------------------------
+
+ const container = document.getElementById('transaction-container');
                const div = document.createElement("div");
                 div.classList.add("bg-red-400");
                 div.innerHTML = `
                     <h1 class="text-yellow-500">Added money from ${allBank} </h1>
                     <h3>${amount}</h3>
+                    <p> account number: ${account} </p>
                 `;
 
                 container.appendChild(div);
-
 
             } else {
                 alert('incorrect pin')
