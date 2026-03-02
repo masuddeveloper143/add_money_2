@@ -1,5 +1,3 @@
-const { createElement } = require("react");
-
 document.getElementById('btn-add-money')
     .addEventListener('click', function (event) {
         event.preventDefault();
@@ -29,20 +27,14 @@ document.getElementById('btn-add-money')
 
 
                 const container = document.getElementById('transaction-container');
-                
-                // const p = document.createElement("p");
-
-                // p.innerText = `added ${amount} from ${account} acount`;
-                // container.appendChild(p)
-
-                const div = document.createElement("div");
+               const div = document.createElement("div");
                 div.classList.add("bg-red-400");
                 div.innerHTML = `
-                    <p>Added ${amount} from ${account}</p>
+                    <h1 class="text-yellow-500">Added money from ${allBank} </h1>
+                    <h3>${amount}</h3>
                 `;
 
                 container.appendChild(div);
-
 
 
             } else {
