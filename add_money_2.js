@@ -16,6 +16,7 @@ document.getElementById('btn-add-money')
                 // document.getElementById("add_money_min_balence").innerText = sum;
                 setInnerTextByIdandValue("add_money_min_balence", sum);
                 // console.log(sum);
+                 console.log('add money successful🎉');
 
 
                 const container = document.getElementById('transaction-container');

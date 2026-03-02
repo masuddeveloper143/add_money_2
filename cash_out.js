@@ -12,9 +12,21 @@ document.getElementById('cashout_btn')
 
         if (cashNumber.length === 11) {
             if (cashoutPin === 1234) {
-                const sum = cashoutAmount - cashoutMinBalance;
+                const sum = cashoutMinBalance - cashoutAmount;
                 document.getElementById('add_money_min_balence').innerText = sum;
                 console.log('cashout successful🎉');
+
+
+                const container = document.getElementById('transaction-container');
+
+                const p = document.createElement("p");
+                p.innerText = `cashout ${cashoutAmount} from this ${cashNumber}  acount`
+                container.appendChild(p)
+
+
+
+
+
             } else {
                 alert('incorrect pin')
             }
@@ -22,4 +34,4 @@ document.getElementById('cashout_btn')
             console.log('invalid your nunber');
         }
 
-    })
+    });
